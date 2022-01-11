@@ -1,0 +1,37 @@
+﻿
+/*Page header*/
+h1 {
+    font-family: 'Amalfi Coast';
+    font-weight:bolder;
+    color: steelblue;
+    margin: 3rem;
+    padding-top: 10px;
+    text-align:center;
+}
+
+/*Paragraph about myself centering*/
+p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+}
+
+/*Move off the edge to be more visible*/
+div{
+    padding-left: 50px;
+}
+
+form{
+    padding-left: 50px;
+}
+
+h2 {
+    padding-left: 50px;
+}
+
+/*change button color*/
+.btnGrade {
+    color: white;
+    background-color: steelblue;
+}
