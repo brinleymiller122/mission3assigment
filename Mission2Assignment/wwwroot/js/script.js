@@ -49,6 +49,4 @@ $("#btnGrade").click(function () {
     //alert result
     alert("Final Percentage: " + ((finalPerc)) + "%"
         + "\n" + "Letter Grade: " + calcLetter(finalPerc));
-
-        
 })
