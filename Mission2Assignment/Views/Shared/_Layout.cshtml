@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width-device-width" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg" />
+    @* Allow for there to be a different title on each page *@
+    <title>@ViewBag.Title</title>
+
+    <!-- Link in css stylesheets -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    @* Navigation bar *@
+    <nav>
+        <a asp-controller="Brinley" asp-action="Index">Home</a>
+        <a asp-controller="Brinley" asp-action="gradecalc">Grade Calculator</a>
+
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <!-- links to js and jquery -->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/lib/jquery/jquery-3.6.0.min (1).js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+</html>

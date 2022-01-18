@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Grade Calculator";
+}
+<!-- grade calculator form -->
+<h2>Grade Calculator</h2>
+<form>
+    <label for="assignments"> Assignments:</label>
+    <input id="assignments" type="number" />%<br /><br />
+    <label for="groupproject" id="ec">Group Projects:</label>
+    <input id="groupproject" type="number" />%<br /><br />
+    <label for="quizzes">Quizzes:</label>
+    <input type="number" id="quizzes" />%<br /><br />
+    <label for="exams">Exams:</label>
+    <input type="number" id="exams" />%<br /><br />
+    <label for="intex">INTEX:</label>
+    <input type="number" id="intex" />%<br /><br />
+
+    <!-- submit button for calculator -->
+    <input class="btnGrade" id="btnGrade" type="button" value="Calculate Grade" />
+
+</form>
+
