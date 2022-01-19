@@ -44,15 +44,12 @@ function calcLetter(n) {
 
 //alert for final grade and letter grade when button is clicked 
 $("#btnGrade").click(function () {
-    //the total grade
-    finalPerc = (($("#assignments").val() * .55) + ($("#groupproject").val() * .05) + ($("#quizzes").val() * .10) + ($("#exams").val() * .20) + ($("#intex").val() * .10)).toFixed(2)
-
-    if (($("#assignments").val() < 101 && $("#assignments").val() >= 0) && ($("#groupproject").val() < 101 && $("#groupproject").val() >= 0) && ($("#quizzes").val() < 101 && $("#quizzes").val() >= 0) && ($("#exams").val() < 101 && $("#exams").val() >= 0) && ($("#intex").val() < 101 && $("#intex").val() >= 0)){
+ 
+        //the total grade
+        finalPerc = (($("#assignments").val() * .55) + ($("#groupproject").val() * .05) + ($("#quizzes").val() * .10) + ($("#exams").val() * .20) + ($("#intex").val() * .10)).toFixed(2)
 
         //alert result
         alert("Final Percentage: " + ((finalPerc)) + "%"
             + "\n" + "Letter Grade: " + calcLetter(finalPerc));
-    }else {
-        alert("Please enter a number between 0-100.")
-    }
+    
 })
