@@ -8,6 +8,7 @@ namespace Mission2Assignment.Models
 {
     public class gradecalcModel
     {
+        //make all fields required and need to be between 0-100
         [Required]
         [Range(0, 100)]
         public int Assignments { get; set; }

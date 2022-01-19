@@ -13,6 +13,7 @@ namespace Mission2Assignment.Controllers
         {
             return View();
         }
+        //Create getter and setting for grade calculation form page
 
         [HttpGet]
         public IActionResult gradecalc()
